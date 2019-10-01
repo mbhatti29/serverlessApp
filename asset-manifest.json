@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/serverlessApp/static/css/main.31a5594f.chunk.css",
-    "main.js": "/serverlessApp/static/js/main.5b4abffe.chunk.js",
-    "main.js.map": "/serverlessApp/static/js/main.5b4abffe.chunk.js.map",
+    "main.js": "/serverlessApp/static/js/main.843b21fd.chunk.js",
+    "main.js.map": "/serverlessApp/static/js/main.843b21fd.chunk.js.map",
     "runtime-main.js": "/serverlessApp/static/js/runtime-main.cb9e0f37.js",
     "runtime-main.js.map": "/serverlessApp/static/js/runtime-main.cb9e0f37.js.map",
     "static/js/2.2b1899d7.chunk.js": "/serverlessApp/static/js/2.2b1899d7.chunk.js",
     "static/js/2.2b1899d7.chunk.js.map": "/serverlessApp/static/js/2.2b1899d7.chunk.js.map",
     "index.html": "/serverlessApp/index.html",
-    "precache-manifest.e66ee0ad5783ed2ddd946da57cbb0860.js": "/serverlessApp/precache-manifest.e66ee0ad5783ed2ddd946da57cbb0860.js",
+    "precache-manifest.a7d13bc752392c432e188e29f3ca20c3.js": "/serverlessApp/precache-manifest.a7d13bc752392c432e188e29f3ca20c3.js",
     "service-worker.js": "/serverlessApp/service-worker.js",
     "static/css/main.31a5594f.chunk.css.map": "/serverlessApp/static/css/main.31a5594f.chunk.css.map"
   }
