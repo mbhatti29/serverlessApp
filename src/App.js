@@ -25,17 +25,27 @@ onMessageChange = (e) => {
 }
 
 submitForm = (e) => {
-	e.preventDefault();
-	const {user, message} = this.state;
+  e.preventDefault();
+  const {user, message} = this.state;
+  let axiosConfig = {
+    headers: {
+      'Content-Type': 'application/json'
+      // "Access-Control-Allow-Origin": "*"
+    }
+  };
+
+  let data = { message: `${user}, ${message}` }
+
 	axios.post(
-      'https://yaohrbj2gh.execute-api.us-east-1.amazonaws.com/default/appFunction',
-      { message: `${user}, ${message}` }
+      'https://yaohrbj2gh.execute-api.us-east-1.amazonaws.com/default/appFunction', 
+      data,
+      axiosConfig
     )
     .then(res => {
-    	console.log(res)
+    	console.log("Axios Response: ", res)
     })
     .catch(err => {
-    	console.log(err)
+    	console.log("Axios Error: ", err)
     })
 	// fetch('https://yaohrbj2gh.execute-api.us-east-1.amazonaws.com/default/appFunction', {
 	// 	method: 'post',
