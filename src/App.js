@@ -7,20 +7,20 @@ class App extends React.Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-				user: '',
-				message: ''
+			user: '',
+			message: ''
 		}
 	}
 
 onUserChange = (e) => {
 	this.setState({
-			user: e.target.value,
+	    user: e.target.value,
 	})
 }
 
 onMessageChange = (e) => {
 	this.setState({
-		message: e.target.value
+	    message: e.target.value
 	})
 }
 
@@ -30,13 +30,12 @@ submitForm = (e) => {
   let axiosConfig = {
     headers: {
       'Content-Type': 'application/json'
-      // "Access-Control-Allow-Origin": "*"
     }
   };
 
   let data = { message: `${user}, ${message}` }
 
-	axios.post(
+    axios.post(
       'https://yaohrbj2gh.execute-api.us-east-1.amazonaws.com/default/appFunction', 
       data,
       axiosConfig
@@ -46,24 +45,10 @@ submitForm = (e) => {
     })
     .catch(err => {
     	console.log("Axios Error: ", err)
-    })
-	// fetch('https://yaohrbj2gh.execute-api.us-east-1.amazonaws.com/default/appFunction', {
-	// 	method: 'post',
-	// 	header: {'Content-Type': 'application/json'},
-	// 	body: JSON.stringify({
-	// 		message: `${user} - ${message}` 
-		
-	// 	})
-	// })
-	// .then(res => res.json())
-	// .then(res => console.log)
-	// .catch(err => {
-	// 	console.log(err)
-	// })
+    })	
 }
 
 	render() {
-
 		return (
 			<div className="App">
 				<h1>Send Message</h1>
